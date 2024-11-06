@@ -7,7 +7,7 @@ if (session_status() == PHP_SESSION_NONE) {
         
         include 'admin/template/header.php';
         if (!empty($_GET['page'])) {
-            include 'admin/module/' . $_GET['page'] . '.php';
+            include 'admin/module/' . $_GET['page'] . '/index.php';
         } else {
             include 'admin/template/home.php';
         }
